@@ -1,9 +1,15 @@
 /* GENERAL STYLES */
 
 * {
+    
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
+
 
 ul {
     list-style: none;
@@ -14,21 +20,47 @@ ul {
     gap: 5px;
 }
 
+
+
 a {
     text-decoration: none;
+    color: white;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    /* height: 100vh; */
+
 }
+
+/* MULTIPLE APPLYING STYLES */
+
+header,
+footer .bottom {
+    background-color: #1F2937;
+    color: white;
+}
+
+header .right, content .bottom {
+    background-color: #E5E7EB;
+}
+
+
 
 /* HEADER STYLES */
 
+header, content, footer {
+    display: flex;
+    height: 33.3%;
+}
+
+
+
+
 header {
     border: 2px solid red;
-    height: 33vh;
+    
+
 
     display: flex;
     flex-direction: column;
@@ -37,48 +69,99 @@ header {
     header .top {
         border: 2px solid blue;
         padding: 5px;
-        height: 20%;
+        font-size: 18px;
 
         display: flex;
+        align-items: center;
 
     }
 
         header .logo {
-            border: 2px solid green;
+            /* border: 2px solid green; */
             margin-right: auto;
+            font-size: 24px;
 
         }
 
         header .links {
-            border: 2px solid green;
+            /* border: 2px solid green; */
+            margin: 0px;
 
         }
 
     header .content {
-        border: 2px solid blue;
-        height: 100%;
-
+        /* border: 2px solid purple; */
         display: flex;
+        gap: 5px;
+        
+        
         
     }
 
         header .content .left {
-            border: 2px solid pink;
+            /* border: 2px solid pink; */
+            width: 95%;
+            
+            margin-left: 5px;
+            margin-right: 5px;
+            
+            
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: start;
+            overflow:auto;
+            
+            
+            
+            
+            
+        }
+
+            header .content .left h1 {
+                margin: 0px;
+                padding: 0px;
+                font-size: 24px;
+                width: 30%;
+                
+                
+                border: 2px solid red;
+                
+                
+                
+                
+                
+                
+            }
+
+            header .content .left p {
+                margin: 0px;
+                padding: 0px;
+                font-size: 16px;
+                width: 40%;
+                border: 2px solid red;
+                
+                display: flex;
+                
+                
+            }
+
+            button {
+                display: flex;
+                border: 2px solid red;
+            }
+
+        header .content .right {
+            /* border: 2px solid pink; */
             width: 50%;
+            
+            
 
             display: flex;
             justify-content: center;
             align-items: center;
             
-        }
-
-        header .content .right {
-            border: 2px solid pink;
-            width: 50%;
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
             
         }
 
@@ -86,15 +169,16 @@ header {
 
 content {
     border: 2px solid orange;
-    height: 33vh;
-
+    
+    
     display: flex;
     flex-direction: column;
 }
 
     content .top {
         border: 2px solid blue;
-        height: 50%;
+        
+        
 
         display: flex;
         justify-content: center;
@@ -103,7 +187,8 @@ content {
 
     content .bottom {
         border: 2px solid blue;
-        height: 50%;
+        
+ 
 
         display: flex;
         justify-content: center;
@@ -115,7 +200,8 @@ content {
 
 footer {
     border: 2px solid orange;
-    height: 33vh;
+    
+ 
 
     display: flex;
     flex-direction: column;
@@ -123,7 +209,7 @@ footer {
 
     footer .top {
         border: 2px solid blue;
-        height: 85%;
+        
 
         display: flex;
         justify-content: center;
@@ -132,7 +218,7 @@ footer {
 
     footer .bottom {
         border: 2px solid blue;
-        height: 15%;
+        
 
         display: flex;
         justify-content: center;
@@ -140,3 +226,35 @@ footer {
     }
 
     
+
+
+
+
+
+
+
+
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+      background-color: #F09A9D; /* Red */
+    }
+  }
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+body {
+    background-color: #F5CF8E; /* Yellow */
+}
+}
+
+@media only screen and (min-width: 961px) {
+
+    body {
+        width: 960px;
+        margin: 0 auto;
+    }
+  
+  }
+
