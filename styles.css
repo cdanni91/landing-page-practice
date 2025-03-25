@@ -18,11 +18,17 @@ a {
     text-decoration: none;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    /* height: 100vh; */
+}
 
 /* HEADER STYLES */
 
 header {
     border: 2px solid red;
+    height: 33vh;
 
     display: flex;
     flex-direction: column;
@@ -31,6 +37,7 @@ header {
     header .top {
         border: 2px solid blue;
         padding: 5px;
+        height: 20%;
 
         display: flex;
 
@@ -49,6 +56,7 @@ header {
 
     header .content {
         border: 2px solid blue;
+        height: 100%;
 
         display: flex;
         
@@ -74,5 +82,61 @@ header {
             
         }
 
+/* CONTENT STYLES */
+
+content {
+    border: 2px solid orange;
+    height: 33vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    content .top {
+        border: 2px solid blue;
+        height: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    content .bottom {
+        border: 2px solid blue;
+        height: 50%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+/* FOOTER STYLES */
+
+footer {
+    border: 2px solid orange;
+    height: 33vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+    footer .top {
+        border: 2px solid blue;
+        height: 85%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    footer .bottom {
+        border: 2px solid blue;
+        height: 15%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
     
