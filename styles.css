@@ -10,6 +10,13 @@
     
 }
 
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    
+    
+}
 
 ul {
     list-style: none;
@@ -27,210 +34,43 @@ a {
     color: white;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+.a, 
+.b, 
+.c {
+    height: 33.3%;
+    border: 2px solid red;
+}
+
+/* As an example, only for practices purpose */
+
+.a {
+    order: 1;
+
+    display: flex; /* If i doesnt set the father container to flex, the flex items dont work with height, in this case the header % */
 
 }
 
-/* MULTIPLE APPLYING STYLES */
-
-header,
-footer .bottom {
-    background-color: #1F2937;
-    color: white;
+.b {
+    order: 2;
 }
 
-header .right, content .bottom {
-    background-color: #E5E7EB;
+.c {
+    order: 3;
 }
-
-
 
 /* HEADER STYLES */
 
-header, content, footer {
-    display: flex;
-    height: 33.3%;
+.header.top {
+    border: 2px solid brown;
+    height: 20%;
+    
 }
 
-
-
-
-header {
-    border: 2px solid red;
+.header.contents {
+    border: 2px solid brown;
+    height: 80%;
     
-
-
-    display: flex;
-    flex-direction: column;
 }
-
-    header .top {
-        border: 2px solid blue;
-        padding: 5px;
-        font-size: 18px;
-
-        display: flex;
-        align-items: center;
-
-    }
-
-        header .logo {
-            /* border: 2px solid green; */
-            margin-right: auto;
-            font-size: 24px;
-
-        }
-
-        header .links {
-            /* border: 2px solid green; */
-            margin: 0px;
-
-        }
-
-    header .content {
-        /* border: 2px solid purple; */
-        display: flex;
-        gap: 5px;
-        
-        
-        
-    }
-
-        header .content .left {
-            /* border: 2px solid pink; */
-            width: 95%;
-            
-            margin-left: 5px;
-            margin-right: 5px;
-            
-            
-
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: start;
-            overflow:auto;
-            
-            
-            
-            
-            
-        }
-
-            header .content .left h1 {
-                margin: 0px;
-                padding: 0px;
-                font-size: 24px;
-                width: 30%;
-                
-                
-                border: 2px solid red;
-                
-                
-                
-                
-                
-                
-            }
-
-            header .content .left p {
-                margin: 0px;
-                padding: 0px;
-                font-size: 16px;
-                width: 40%;
-                border: 2px solid red;
-                
-                display: flex;
-                
-                
-            }
-
-            button {
-                display: flex;
-                border: 2px solid red;
-            }
-
-        header .content .right {
-            /* border: 2px solid pink; */
-            width: 50%;
-            
-            
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-            
-        }
-
-/* CONTENT STYLES */
-
-content {
-    border: 2px solid orange;
-    
-    
-    display: flex;
-    flex-direction: column;
-}
-
-    content .top {
-        border: 2px solid blue;
-        
-        
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    content .bottom {
-        border: 2px solid blue;
-        
- 
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-
-/* FOOTER STYLES */
-
-footer {
-    border: 2px solid orange;
-    
- 
-
-    display: flex;
-    flex-direction: column;
-}
-
-    footer .top {
-        border: 2px solid blue;
-        
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    footer .bottom {
-        border: 2px solid blue;
-        
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    
-
-
-
-
-
 
 
 
@@ -255,6 +95,5 @@ body {
         width: 960px;
         margin: 0 auto;
     }
-  
-  }
 
+}
