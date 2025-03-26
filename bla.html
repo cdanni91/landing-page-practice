@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Layout Example</title>
+  <style>
+    /* Set up the body as a flex container in column direction */
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      margin: 0;
+    }
+    /* Basic styling for the main sections */
+    header, main, footer {
+      border: 1px solid #000;
+    }
+    /* Header: a flex container with a fixed height */
+    header {
+      display: flex;
+      flex-direction: column;
+      height: 200px; /* Adjust this height as needed */
+    }
+    /* Header's children: set heights as percentages of the header's height */
+    .header-a {
+      background-color: lightblue;
+      height: 30%; /* 30% of header's height */
+    }
+    .header-b {
+      background-color: lightcoral;
+      height: 70%; /* 70% of header's height */
+    }
+    /* Main content takes remaining available space */
+    main {
+      height: 500px;
+      background-color: lightgray;
+    }
+    /* Footer with a fixed height */
+    footer {
+      height: 50px;
+      background-color: lightgreen;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-a">Header A (30%)</div>
+    <div class="header-b">Header B (70%)</div>
+  </header>
+  <main>
+    Content Area
+  </main>
+  <footer>
+    Footer
+  </footer>
+</body>
+</html>

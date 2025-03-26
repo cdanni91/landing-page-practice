@@ -1,76 +1,65 @@
-/* GENERAL STYLES */
-
 * {
-    
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 20px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-}
+  }
+ 
 
-html, body {
+body {
     display: flex;
     flex-direction: column;
-    height: 900px;
-    
-    
-}
+    height: 120vh;
+    margin: 20px; /* Default value was 0 */
+  }
 
-ul {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
 
+
+  header, main, footer {
+    border: 1px solid #000;
+  }
+
+
+  header, footer {
     display: flex;
-    gap: 5px;
-}
+    flex-direction: column;
+    height: 100px; /* Adjust this height as needed */
+  }
+
+
+    .a {
+        border: 1px solid red;
+        height: 50%;
+    }
+
+    .b {
+        border: 1px solid red;
+        height: 50%;
+    }
+
+
+  main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+
+    .content-a,
+    .content-b,
+    .content-c,
+    .content-d {
+        height: 25%;
+        border: 1px solid purple;
+    }
 
 
 
-a {
-    text-decoration: none;
-    color: white;
-}
 
-.a, 
-.b, 
-.c {
-    height: 33.3%;
-    border: 2px solid red;
-}
 
-/* As an example, only for practices purpose */
 
-.a {
-    order: 1;
 
-    display: flex; /* If i doesnt set the father container to flex, the flex items dont work with height, in this case the header % */
 
-}
 
-.b {
-    order: 2;
-}
-
-.c {
-    order: 3;
-}
-
-/* HEADER STYLES */
-
-.header.top {
-    border: 2px solid brown;
-    height: 20%;
-    
-}
-
-.header.contents {
-    border: 2px solid brown;
-    height: 80%;
-    
-}
 
 
 
@@ -78,22 +67,26 @@ a {
 /* Mobile Styles */
 @media only screen and (max-width: 400px) {
     body {
-      background-color: #F09A9D; /* Red */
+    background-color: #F09A9D; /* Red */
     }
-  }
+}
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-body {
-    background-color: #F5CF8E; /* Yellow */
-}
-}
-
-@media only screen and (min-width: 961px) {
-
     body {
-        width: 960px;
-        margin: 0 auto;
+        background-color: yellowgreen; /* Red */
+        }
     }
+    
 
+
+
+
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+    body {
+    width: 960px;
+    margin: 0 auto;
+    }
 }
