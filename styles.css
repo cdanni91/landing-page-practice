@@ -124,11 +124,67 @@ ul {
             height: 100%;
             width: 50%;
             background-color: grey;
-            
+            color: white;
+
             align-items: center;
             justify-content: center;
         }
 
+    .content-b {
+        border: 2px solid white;
+
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+    }
+
+        .top-information {
+            border: 2px solid red;
+            height: 25%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content-b-main {
+            border: 2px solid red;
+            height: 75%;
+
+            display: flex;
+            flex-grow: 1;
+
+        }
+
+            .bottom-container-a,
+            .bottom-container-b,
+            .bottom-container-c,
+            .bottom-container-d {
+                border: 2px solid blue;
+                width: 25%;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 5px;
+            }
+
+                .square-a,
+                .square-b,
+                .square-c,
+                .square-d {
+                    border: 2px solid brown;
+                    height: 80px;
+                    width: 80px;
+                    border-radius: 20px;
+                    background-color: white;
+                }
+
+                p {
+                    border: 2px solid black;
+                    font-size: 12px;
+                }
 
  /*    .content-a {
         order: 2;
@@ -147,8 +203,77 @@ ul {
     } */
 
 
+    .content-c {
+        border: 2px solid pink;
+
+        display: flex;
+        flex-direction: column;
+        }
+
+        .inspiration-quote {
+            border: 2px solid black;
+            height: 80%;
+            font-style: italic;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .inspiration-quote-author {
+            border: 2px solid black;
+            height: 20%;
+            
+            display: flex;
+            justify-content: end;
+            align-items: center;
+        }
 
 
+    .content-d {
+        border: 5px solid rgb(131, 7, 125);
+
+        display: flex;
+        flex-grow: 1;
+        
+
+    }
+        .advertise-container {
+            border: 2px solid black;
+            padding: 40px;
+
+            display: flex;
+            width: 100%;
+
+        }
+
+            .advertise-container-left {
+                border: 2px solid red;
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+
+            .advertise-container-right {
+                border: 2px solid white;
+                width: 20%;
+
+                display: flex;
+                justify-content: start;
+                align-items: center;
+            }
+
+  footer {
+        border: 2px solid red;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
 
 
