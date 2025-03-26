@@ -94,11 +94,39 @@ ul {
         .content-a .left {
             border: 2px solid green;
             height: 100%;
+            width: 50%;
+            color: #E5E7EB;
+            /* padding: 5px; */
+
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+          
         }
+            .title {
+                border: 2px solid pink;
+                width: 200px;
+            }
+
+            .subtitle {
+                border: 2px solid purple;
+                width: 300px;
+            }
+
+            .sign-up-button {
+                /* border: 2px solid red; */
+                height: 20px;
+                width: 80px;
+            }
 
         .content-a .right {
             border: 2px solid green;
             height: 100%;
+            width: 50%;
+            background-color: grey;
+            
+            align-items: center;
+            justify-content: center;
         }
 
 
