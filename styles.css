@@ -1,3 +1,5 @@
+/* GENERAL STYLES */
+
 * {
     margin: 0;
     padding: 0;
@@ -6,12 +8,25 @@
  
 
 body {
-    display: flex;
-    flex-direction: column;
     height: 120vh;
     margin: 20px; /* Default value was 0 */
+    
+    display: flex;
+    flex-direction: column;
   }
 
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    display: flex;
+    gap: 3px;
+  }
+
+
+/* MULTIPLE STYLES */
 
 
   header, main, footer {
@@ -20,21 +35,29 @@ body {
 
 
   header, footer {
-    display: flex;
-    flex-direction: column;
-    height: 50px; /* Adjust this height as needed */
+    height: 25px; /* Adjust this height as needed */
+    align-items: center;
   }
 
 
-    .a {
+/* HEADER CUSTOM STYLES */
+
+  header {
+    display: flex;
+  }
+
+    .header-logo {
         border: 1px solid red;
-        height: 50%;
+        margin-right: auto;
+        
     }
 
-    .b {
+    .header-links {
         border: 1px solid red;
-        height: 50%;
+        
     }
+
+        
 
 
   main {
@@ -53,7 +76,7 @@ body {
     }
 
 
-    .content-a {
+ /*    .content-a {
         order: 2;
     }
 
@@ -67,7 +90,7 @@ body {
 
     .content-d {
         order: 4;
-    }
+    } */
 
 
 
