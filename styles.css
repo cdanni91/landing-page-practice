@@ -9,7 +9,8 @@
  
 
 html {
-    background-color: rgb(7, 25, 46);
+    /* background-color: rgb(7, 25, 46); */
+    margin: 0px; /* only for placeholder */
 }
 
 body {
@@ -35,7 +36,8 @@ ul {
 
 
   header, main, footer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
+    margin: 0px; /* only for placeholder */
   }
 
 
@@ -53,17 +55,19 @@ ul {
 
   header {
     display: flex;
+    padding: 5px;
   }
 
     .header-logo {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         margin-right: auto;
         font-size: 24px;
         
     }
 
     .header-links {
-        border: 1px solid red;
+        /* border: 1px solid red; */
+        margin: 0px; /* only for placeholder */
         
     }
 
@@ -82,7 +86,7 @@ ul {
     .content-c,
     .content-d {
         height: 25%;
-        border: 1px solid purple;
+        /* border: 1px solid purple; */
     }
 
     .content-a {
@@ -92,46 +96,57 @@ ul {
         flex-grow: 1;
     }
         .content-a .left {
-            border: 2px solid green;
+            /* border: 2px solid green; */
             height: 100%;
             width: 50%;
             color: #E5E7EB;
-            /* padding: 5px; */
+            padding: 20px;
 
             display: flex;
             flex-direction: column;
-            gap: 5px;
+            gap: 10px;
           
         }
             .title {
-                border: 2px solid pink;
+                /* border: 2px solid pink; */
                 width: 200px;
             }
 
             .subtitle {
-                border: 2px solid purple;
+                /* border: 2px solid purple; */
                 width: 300px;
+                
+                display: flex;
+                text-align: left;
+                
             }
 
             .sign-up-button {
                 /* border: 2px solid red; */
-                height: 20px;
+                height: 145px;
                 width: 80px;
+                border-radius: 8px;
+                background-color: rgb(23, 122, 252);
+                color: white;
+                font-weight: 800;
+                border: none;
             }
 
         .content-a .right {
-            border: 2px solid green;
+            /* border: 2px solid green; */
             height: 100%;
             width: 50%;
             background-color: grey;
             color: white;
+            font-weight: 800;
 
             align-items: center;
             justify-content: center;
+            text-align: center;
         }
 
     .content-b {
-        border: 2px solid white;
+        /* border: 2px solid white; */
 
         display: flex;
         flex-direction: column;
@@ -139,17 +154,20 @@ ul {
     }
 
         .top-information {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             height: 25%;
             
             display: flex;
             justify-content: center;
             align-items: center;
+
+            background-color: white;
         }
 
         .content-b-main {
-            border: 2px solid red;
+            /* border: 2px solid red; */
             height: 75%;
+            background-color: white;
 
             display: flex;
             flex-grow: 1;
@@ -160,7 +178,7 @@ ul {
             .bottom-container-b,
             .bottom-container-c,
             .bottom-container-d {
-                border: 2px solid blue;
+                /* border: 2px solid blue; */
                 width: 25%;
 
                 display: flex;
@@ -174,16 +192,19 @@ ul {
                 .square-b,
                 .square-c,
                 .square-d {
-                    border: 2px solid brown;
+                    border: 3px solid rgb(23, 122, 252);
                     height: 80px;
                     width: 80px;
-                    border-radius: 20px;
+                    border-radius: 10px;
                     background-color: white;
                 }
 
                 p {
-                    border: 2px solid black;
+                    /* border: 2px solid black; */
                     font-size: 12px;
+                    width: 100px;
+                    text-align: center;
+
                 }
 
  /*    .content-a {
@@ -204,26 +225,38 @@ ul {
 
 
     .content-c {
-        border: 2px solid pink;
+        /* border: 2px solid pink; */
+        background-color: #E5E7EB;
 
         display: flex;
         flex-direction: column;
+        overflow: hidden;
+        
+        
         }
 
         .inspiration-quote {
-            border: 2px solid black;
+            /* border: 2px solid black; */
             height: 80%;
+            width: 420px;
+            margin-left: auto;  /* Para centrar el elemento */
+            margin-right: auto;
             font-style: italic;
+            text-align: center;
+            
 
             display: flex;
             justify-content: center;
             align-items: center;
+            
 
         }
 
         .inspiration-quote-author {
-            border: 2px solid black;
+            /* border: 2px solid black; */
             height: 20%;
+            padding-right: 20px;
+            font-weight: 800;
             
             display: flex;
             justify-content: end;
@@ -232,7 +265,8 @@ ul {
 
 
     .content-d {
-        border: 5px solid rgb(131, 7, 125);
+        /* border: 5px solid rgb(131, 7, 125); */
+        background-color: white;
 
         display: flex;
         flex-grow: 1;
@@ -240,35 +274,55 @@ ul {
 
     }
         .advertise-container {
-            border: 2px solid black;
+            /* border: 2px solid black; */
             padding: 40px;
+            width: 100%;
 
             display: flex;
-            width: 100%;
+            gap: 10px;
+            
+            
 
         }
 
             .advertise-container-left {
-                border: 2px solid red;
+                /* border: 2px solid red; */
+                background-color: #3794d1;
                 width: 100%;
+                color: white;
+                border-radius: 20px;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                gap: 5px;
+            }
+
+                h4 {
+                    /* border: 2px solid green; */
+                    width: 100%;
+                    
+                    
+                    display: flex;
+                    justify-content: center;
+                    
+                    
+                }
+
+            .advertise-container-right {
+                /* border: 2px solid black; */
+                width: 20%;
+                
 
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                text-align: center;
-            }
-
-            .advertise-container-right {
-                border: 2px solid white;
-                width: 20%;
-
-                display: flex;
-                justify-content: start;
-                align-items: center;
             }
 
   footer {
-        border: 2px solid red;
+        /* border: 2px solid red; */
 
         display: flex;
         justify-content: center;
@@ -290,7 +344,7 @@ ul {
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
     body {
-        background-color: yellowgreen; /* Red */
+        background-color: #E5E7EB; /* Red */
         }
     }
     
